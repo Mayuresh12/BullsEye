@@ -19,7 +19,19 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    @IBAction func showAlert(_ sender: Any) {
+        let alert = UIAlertController.init(title: "Hello, World!", message: "This is my first app!", preferredStyle: .alert)
+        let action = UIAlertAction.init(title: "Awesome", style: .default, handler: nil)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+    }
+    @IBAction func knockKnock(_ sender: Any) {
+        let alert = UIAlertController.init(title: "Knock Knock!", message: "Who is this?", preferredStyle: .alert)
+        let action = UIAlertAction.init(title: "This is old Lady.", style: .default, handler: nil)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+    }
+    
 
 }
 
