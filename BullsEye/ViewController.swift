@@ -32,7 +32,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func showAlert(_ sender: Any) {
-        let message = "The value of the slider is \(currentValue)" + " \n The target value is :\(targetValue)"
+        let  difference = abs(currentValue - targetValue)
+        let points = 100 - difference
+        let message = "You scored \(points) points"
         let alert = UIAlertController.init(title: "Hello, World!", message: message, preferredStyle: .alert)
         let action = UIAlertAction.init(title: "Awesome", style: .default, handler: nil)
         alert.addAction(action)
