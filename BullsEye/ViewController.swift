@@ -12,7 +12,9 @@ class ViewController: UIViewController {
     var currentValue : Int = 0
     @IBOutlet weak var slider : UISlider!
     var targetValue : Int = 0
+    var score  = 0
     @IBOutlet weak var targetValueOutlet: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         currentValue = lroundf(slider.value)
@@ -26,6 +28,7 @@ class ViewController: UIViewController {
     }
     func updateLabels (){
         targetValueOutlet.text = String(targetValue)
+        scoreLabel.text = String(score)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -34,7 +37,8 @@ class ViewController: UIViewController {
     @IBAction func showAlert(_ sender: Any) {
         let  difference = abs(currentValue - targetValue)
         let points = 100 - difference
-        let message = "You scored \(points) points"
+        score += points
+        let message = "You scored \(score) points"
         let alert = UIAlertController.init(title: "Hello, World!", message: message, preferredStyle: .alert)
         let action = UIAlertAction.init(title: "Awesome", style: .default, handler: nil)
         alert.addAction(action)
