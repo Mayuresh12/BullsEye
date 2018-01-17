@@ -59,10 +59,12 @@ class ViewController: UIViewController {
         score += points
         let message = "You scored \(points) points"
         let alert = UIAlertController.init(title: title, message: message, preferredStyle: .alert)
-        let action = UIAlertAction.init(title: "Awesome", style: .default, handler: nil)
+        let action = UIAlertAction.init(title: "Awesome", style: .default, handler: {
+            action in
+            self.startNewRound() //this is concept about closure
+        })
         alert.addAction(action)
-        present(alert, animated: true, completion: nil)//Alerts are called asynchroniously 
-        startNewRound()
+        present(alert, animated: true, completion: nil)//Alerts are called asynchroniously
     }
     
     @IBAction func sliderMoved(_ slider: UISlider){
