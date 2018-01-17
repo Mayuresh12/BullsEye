@@ -17,11 +17,30 @@ class ViewController: UIViewController {
     var bonus = 50
     @IBOutlet weak var targetValueOutlet: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
-    @IBOutlet weak var roundLabel : UILabel!
+    @IBOutlet weak var roundLabel : UILabel!    
     override func viewDidLoad() {
         super.viewDidLoad()
         currentValue = lroundf(slider.value)
-        startNewRound()
+        startNewGame()
+
+        let thumbImageNormal = #imageLiteral(resourceName: "SliderThumb-Normal") //UIImage(named: "SliderThumb-Normal")
+        slider.setThumbImage(thumbImageNormal, for: .normal)
+        
+        let thumbImageHighlighted = #imageLiteral(resourceName: "SliderThumb-Highlighted") //UIImage(named: "SliderThumb-Highlighted")
+        slider.setThumbImage(thumbImageHighlighted, for: .highlighted)
+        
+        let insets = UIEdgeInsets(top: 0, left: 14, bottom: 0, right: 14)
+        
+        let trackLeftImage = #imageLiteral(resourceName: "SliderTrackLeft") //UIImage(named : "SliderTrackLeft")
+        let trackLeftResizable = trackLeftImage.resizableImage(withCapInsets: insets)
+        slider.setMinimumTrackImage(trackLeftResizable, for: .normal)
+        
+        let trackRightImage = #imageLiteral(resourceName: "SliderTrackRight") //UIImage(named : "SliderTrackRight")
+        let trackRightResizable = trackRightImage.resizableImage(withCapInsets: insets)
+        slider.setMinimumTrackImage(trackRightResizable, for: .normal)
+        
+        
+        
     }
     @IBAction func startNewGame(){
         score = 0

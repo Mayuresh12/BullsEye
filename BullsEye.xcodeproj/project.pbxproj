@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		EA3F18E5200F282000E4CA3B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3F18E4200F282000E4CA3B /* AboutViewController.swift */; };
 		EA3F18E7200F2C8F00E4CA3B /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3F18E6200F2C8F00E4CA3B /* AboutMeViewController.swift */; };
+		EA3F18E9200F479A00E4CA3B /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = EA3F18E8200F479A00E4CA3B /* BullsEye.html */; };
 		EA95EAFD200BF66500F25EFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA95EAFC200BF66500F25EFD /* AppDelegate.swift */; };
 		EA95EAFF200BF66500F25EFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA95EAFE200BF66500F25EFD /* ViewController.swift */; };
 		EA95EB02200BF66500F25EFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA95EB00200BF66500F25EFD /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		EA3F18E4200F282000E4CA3B /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		EA3F18E6200F2C8F00E4CA3B /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
+		EA3F18E8200F479A00E4CA3B /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
 		EA95EAF9200BF66500F25EFD /* BullsEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullsEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA95EAFC200BF66500F25EFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA95EAFE200BF66500F25EFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 		EA95EAFB200BF66500F25EFD /* BullsEye */ = {
 			isa = PBXGroup;
 			children = (
+				EA3F18E8200F479A00E4CA3B /* BullsEye.html */,
 				EA95EAFC200BF66500F25EFD /* AppDelegate.swift */,
 				EA95EAFE200BF66500F25EFD /* ViewController.swift */,
 				EA95EB00200BF66500F25EFD /* Main.storyboard */,
@@ -130,6 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA95EB07200BF66500F25EFD /* LaunchScreen.storyboard in Resources */,
+				EA3F18E9200F479A00E4CA3B /* BullsEye.html in Resources */,
 				EA95EB04200BF66500F25EFD /* Assets.xcassets in Resources */,
 				EA95EB02200BF66500F25EFD /* Main.storyboard in Resources */,
 			);
