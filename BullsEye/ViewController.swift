@@ -61,7 +61,7 @@ class ViewController: UIViewController {
         let alert = UIAlertController.init(title: title, message: message, preferredStyle: .alert)
         let action = UIAlertAction.init(title: "Awesome", style: .default, handler: nil)
         alert.addAction(action)
-        present(alert, animated: true, completion: nil)
+        present(alert, animated: true, completion: nil)//Alerts are called asynchroniously 
         startNewRound()
     }
     
