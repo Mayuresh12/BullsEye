@@ -23,6 +23,12 @@ class ViewController: UIViewController {
         currentValue = lroundf(slider.value)
         startNewRound()
     }
+    @IBAction func startNewGame(){
+        score = 0
+        round = 0
+        startNewRound()
+    }
+    
     func startNewRound (){
         targetValue = 1 + Int(arc4random_uniform(100))
         currentValue =  50
