@@ -4,7 +4,7 @@
 //
 //  Created by Mayuresh Rao on 1/14/18.
 //  Copyright © 2018 Mayuresh Rao. All rights reserved.
-// I will make it work more harder. Be the hardest worker in the room
+// I will make it work more harder. Be the hardest worker in the room.
 
 import UIKit
 
